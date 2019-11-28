@@ -58,11 +58,11 @@ namespace GreenlabDatabaseAndLogin
             {
 
                 string id = dataReader["user_id"].ToString();
-                string firstname = (string)dataReader["first_name"];
-                string lastname = (string)dataReader["last_name"];
+                string firstname = dataReader["first_name"].ToString();
+                string lastname = dataReader["last_name"].ToString();
                 string phone = dataReader["phone"].ToString();
-                string role = (string)dataReader["role"];
-                string partner = (string)dataReader["partner"];
+                string role = dataReader["role"].ToString();
+                string partner = dataReader["partner"].ToString();
 
                 User userInstance = new User(id, firstname, lastname, phone, email, role, partner);
                 connection.Close();
