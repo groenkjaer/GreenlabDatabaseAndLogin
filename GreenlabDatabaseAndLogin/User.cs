@@ -8,13 +8,13 @@ namespace GreenlabDatabaseAndLogin
 {
     public class User
     {
-        public string Userid;
-        public string Firstname;
-        public string Lastname;
-        public string Phone;
-        public string Email;
-        public string Role;
-        public string Partner;
+        private string Userid;
+        private string Firstname;
+        private string Lastname;
+        private string Phone;
+        private string Email;
+        private string Role;
+        private string Partner;
 
         public User(string userid, string firstname, string lastname, string phone, string email, string role, string partner)
         {
@@ -25,6 +25,21 @@ namespace GreenlabDatabaseAndLogin
             Email = email;
             Role = role;
             Partner = partner;
+        }
+
+        public string GetFirstName
+        {
+            get { return Firstname; }
+        }
+
+        public string GetLastName
+        {
+            get { return Lastname; }
+        }
+
+        public string GetPartner
+        {
+            get { return Partner; }
         }
     }
 }

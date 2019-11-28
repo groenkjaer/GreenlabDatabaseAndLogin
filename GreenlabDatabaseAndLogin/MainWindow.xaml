@@ -11,7 +11,7 @@
             <ColumnDefinition Width="73*"/>
             <ColumnDefinition Width="190*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Margin="59,119,0,0" Width="75" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Margin="59,119,0,0" Width="75" VerticalAlignment="Top" Grid.ColumnSpan="2" IsEnabled="False"/>
         <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Margin="66.4,119,0,0" Width="75" VerticalAlignment="Top" Grid.Column="1" Click="Login_Click"/>
         <TextBox x:Name="Email" HorizontalAlignment="Left" Height="23" Margin="21,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label x:Name="emailLabel" Content="Email" HorizontalAlignment="Left" Margin="51,44,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>

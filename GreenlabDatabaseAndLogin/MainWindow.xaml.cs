@@ -19,15 +19,12 @@ namespace GreenlabDatabaseAndLogin
 
             if (database.IsValidEmail(Email.Text))
             {
-                MessageBox.Show("Email ok");
-
                 if (database.AttemptLogin(Password.Password))
                 {
-                    MessageBox.Show("Pass and email ok");
                     UserIsLoggedIn = true;
                     User currentUser = database.CreateUserInstance(Email.Text);
 
-                    MessageBox.Show("Welcome " + currentUser.Firstname + " " + currentUser.Lastname);
+                    MessageBox.Show("Welcome " + currentUser.GetFirstName + " " + currentUser.GetLastName + " from " + currentUser.GetPartner);
                 }
                 else
                 {
