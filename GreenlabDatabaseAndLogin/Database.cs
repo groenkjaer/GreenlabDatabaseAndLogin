@@ -20,7 +20,7 @@ namespace GreenlabDatabaseAndLogin
             SqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
-                tempEmail = (string)dataReader["email"];
+                tempEmail = dataReader["email"].ToString();
                 tempEmail = tempEmail.ToLower();
                 if (email == tempEmail)
                 {
@@ -56,7 +56,6 @@ namespace GreenlabDatabaseAndLogin
             SqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
-
                 string id = dataReader["user_id"].ToString();
                 string firstname = dataReader["first_name"].ToString();
                 string lastname = dataReader["last_name"].ToString();
