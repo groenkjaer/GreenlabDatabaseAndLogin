@@ -8,14 +8,23 @@ namespace GreenlabDatabaseAndLogin
 {
     public class User
     {
-        public string Userid { get; set; }
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Role { get; set; }
-        public string Partner { get; set; }
+        public string Userid;
+        public string Firstname;
+        public string Lastname;
+        public string Phone;
+        public string Email;
+        public string Role;
+        public string Partner;
 
+        public User(string userid, string firstname, string lastname, string phone, string email, string role, string partner)
+        {
+            Userid = userid;
+            Firstname = firstname;
+            Lastname = lastname;
+            Phone = phone;
+            Email = email;
+            Role = role;
+            Partner = partner;
+        }
     }
 }
